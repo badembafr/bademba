@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jaje2231/public_html/
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp css/style.css $DEPLOYPATH
+    - /bin/cp js/script.js $DEPLOYPATH
+    - /bin/cp /medias $DEPLOYPATH
+    - /bin/cp /includes $DEPLOYPATH
