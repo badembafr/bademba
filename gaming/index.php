@@ -1,6 +1,6 @@
 <?php 
 
-$bdd = new PDO('mysql:host=localhost;dbname=bfr;charset=utf8;', 'root', 'root');
+$bdd = new PDO('mysql:host=109.234.165.205;dbname=jaje2231_bfr;charset=utf8;', 'jaje2231_bademba', 'FD5isAodQO80NVje2cR&');
 
 $requete = $bdd->query("SELECT * FROM `config` WHERE categorie='gaming' ORDER BY prix");
 
@@ -23,7 +23,7 @@ $requete = $bdd->query("SELECT * FROM `config` WHERE categorie='gaming' ORDER BY
 
 <?php 
 
-$bdd = new PDO('mysql:host=localhost;dbname=bfr;charset=utf8;', 'root', 'root');
+$bdd = new PDO('mysql:host=109.234.165.205;dbname=jaje2231_bfr;charset=utf8;', 'jaje2231_bademba', 'FD5isAodQO80NVje2cR&');
 
 $requete2 = $bdd->query("SELECT * FROM `config` WHERE categorie='gaming' ORDER BY prix LIMIT 4");
 
