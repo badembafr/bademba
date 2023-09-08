@@ -1,12 +1,4 @@
-<?php
-
-$host = '109.234.165.205'; 
-$dbname = 'jaje2231_bfr';  
-$id = 'jaje2231_bademba';  
-$passwd = 'FD5isAodQO80NVje2cR&';
-
-?>
-
+<?php  include 'includes/host.php'  ?>
 
 
 <?php
@@ -86,7 +78,7 @@ $requete2 = $bdd->query("SELECT * FROM `config` WHERE pop='hight' ORDER BY prix 
     <section id="categories-PC">
         <div class="categories-PC">
             <?php
-            $bdd = new PDO('mysql:host=109.234.165.205;dbname=jaje2231_bfr;charset=utf8;', 'jaje2231_bademba', 'FD5isAodQO80NVje2cR&');
+            $bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8;", $id, $passwd);
             $requete3 = $bdd->query("SELECT * FROM `config` WHERE pop='hight' ORDER BY prix LIMIT 3");
             while ($config3 = $requete3->fetch()): ?>
                 <div class="conteneur">

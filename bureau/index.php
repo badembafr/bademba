@@ -1,6 +1,8 @@
+<?php  include '../includes/host.php'  ?>
+
 <?php 
 
-$bdd = new PDO('mysql:host=109.234.165.205;dbname=jaje2231_bfr;charset=utf8;', 'jaje2231_bademba', 'FD5isAodQO80NVje2cR&');
+$bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8;", $id, $passwd);
 
 $requete = $bdd->query("SELECT * FROM `config` WHERE categorie='bureau' ORDER BY prix");
 
@@ -23,7 +25,7 @@ $requete = $bdd->query("SELECT * FROM `config` WHERE categorie='bureau' ORDER BY
 
 <?php 
 
-$bdd = new PDO('mysql:host=109.234.165.205;dbname=jaje2231_bfr;charset=utf8;', 'jaje2231_bademba', 'FD5isAodQO80NVje2cR&');
+$bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8;", $id, $passwd);
 
 $requete2 = $bdd->query("SELECT * FROM `config` WHERE categorie='bureau' ORDER BY prix LIMIT 4");
 

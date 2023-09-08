@@ -1,9 +1,5 @@
 <section id="PC-details">
-        <div class="PC-details">
-            <div class="titre">
-                <h1> <?php echo $config['titre']; ?> </h1>
-                <p><?php echo $config['description'] ?></p>
-           </div>
+        <div id="pc" class="PC-details">
             <div class="conteneur">
                 <div class="box1">
                     <img src="<?php echo $config['link-img'] ?>" alt="">
